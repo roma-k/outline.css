@@ -40,7 +40,9 @@ html {
   section,
   article,
   aside,
-  form {
+  form,
+  div,
+  span {
     background-color: #f9f7ff;
     border: 2px solid #9779ec;
   }
@@ -49,7 +51,9 @@ html {
   section::before,
   article::before,
   form::before,
-  aside::before {
+  aside::before,
+  div::before,
+  span::before {
     color: #9779ec;
   }
   
@@ -197,6 +201,14 @@ html {
   
   aside::before {
     content: "aside";
+  }
+
+  div::before {
+    content: "div";
+  }
+
+  span::before {
+    content: "span";
   }
   
   nav::before {
